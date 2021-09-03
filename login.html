@@ -5,7 +5,13 @@
     </head>
     <body>
         <div id="mainDiv"><!--Main Div Starts here-->
-            <p>LOGIN</p>
+            <form action="index.html" method="GET">
+                <label for="username">Username:</label>
+                <input type="text" placeholder="Enter Username" id="username" name="username" autocomplete="off" required><br>
+                <label for="user_password">Password:</label>
+                <input type="password" placeholder="Enter Password" id="user_password" name="user_password" required><br>
+                <input type="submit" value="Login">
+            </form>
         </div><!--Main Div Ends here-->
     </body>
 </html>
