@@ -1,0 +1,17 @@
+/* Main div style */
+#mainDiv{
+    width: 100%;
+    height: 100%;
+}
+
+/* logo style */
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+/* social icon style */
+.social_icon{
+    width: 22px;
+    height: 20px;
+}

@@ -2,18 +2,20 @@
 <html>
     <head>
         <title>Detail</title>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/detail.css">
     </head>
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-             <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="200px" width="150px"/></a>
+             <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="logo"></a>
                 <a href="login.html" target="_self">Login</a>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
                 <article>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image"><br>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="detail_hotel_image"><br>
                     <form action="payment.html" method="GET">
                         <label for="adult_no">Adults:</label>
                         <input type="number" name="adult_no" id="adult_no" min="1"><br>
@@ -45,9 +47,9 @@
        
         <footer><!--FOOTER starts-->
             <a href="contact.html" target="_self">Contact Us</a><br>
-           <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" width="22px"></a>
-           <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" width="22px"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" width="22px"></a>
+           <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
+           <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
             <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
         </footer><!--FOOTER ends-->
     
