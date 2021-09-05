@@ -1,8 +1,22 @@
+
+/* Body style */
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+
 /* Main div style */
 #mainDiv{
     width: 100%;
     height: 100%;
 }
+
+/* Header style */
+header{
+    background-color: rosybrown;
+}
+
 
 /* logo style */
 #logo{
@@ -14,4 +28,9 @@
 .social_icon{
     width: 22px;
     height: 20px;
+}
+
+/* footer style */
+footer{
+    background-color: rosybrown;
 }

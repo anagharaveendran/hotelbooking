@@ -1,4 +1,12 @@
+/* hotel image */
 .hotel_image{
     width: 250px;
     height: 250px;
+}
+
+/* image with details */
+.hotel_view{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
 }
