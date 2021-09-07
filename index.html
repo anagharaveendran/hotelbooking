@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Index</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/index.css">
     </head>
@@ -10,13 +11,13 @@
 
             <header> <!--HEADER starts-->
                 <img src="assests/images/logo.png" id="logo" alt="logo"/>
-                <a href="login.html" target="_self">Login</a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
             <div id="search_bar">
                 <form>
-                    <input type="text" placeholder="City" name="city" id="city">
+                    <input type="text" placeholder="City" name="searchCity" id="searchCity">
                 </form>
             </div>
 
@@ -27,16 +28,22 @@
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city"><br>
             </div>
             
-            <a href="#">View more>></a>
+            <div id="view">
+            <a href="#" id="view_more">View more>></a>
+            </div>
 
             </section> <!--SECTION content ends-->
        
         <footer><!--FOOTER starts-->
-            <a href="contact.html" target="_self">Contact Us</a><br>
+           
+          <a href="contact.html" target="_self" id="contact">Contact Us</a>
+           
+            <div class="social_icons">
            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
           <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-            <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
+        </div><br><br>
+         <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
         </footer><!--FOOTER ends-->
     
     </div><!--MAIN DIV ends here-->

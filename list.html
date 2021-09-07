@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/list.css">
     </head>
@@ -9,20 +10,21 @@
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-               <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="logo"></a>
-                <a href="login.html" target="_self">Login</a>
+                <a href="index.html"><img src="assests/images/logo.png" id="logo" alt="logo"/></a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
                 
                 <nav> <!--navbar-->
                 <ul>
-                    <a href="#list-view"><li>List View</li></a>
-                    <a href="#map-view"><li>Map View</li></a>
+                    <li><a href="#list-view">List View</a></li>
+                    <li><a href="#map-view">Map View</a></li>
                 </ul>
                 </nav>
 
-                <a href="detail.html"><div id="list-view" class="hotel_view">
+                <div class="hotel_view_main" id="list-view" style="height: 950px;"><!--hotel list view-->
+                <a href="detail.html"><div id="hotel1" class="hotel_view">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" class="hotel_image">
                 <h3>Radisson Blu Hotel</h3>
                 <p>5 Star</p>
@@ -42,22 +44,26 @@
                 <p>4.0 Star</p>
                 <p>New Delhi</p>
                 </div>
+                </div>
 
-                <div id="map-view">
+                <div id="map-view"><!--map view-->
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map_image">
                 <p>MAP VIEW</p>
                 </div>
-                
+
             </section> <!--SECTION content ends-->
-           
             <footer><!--FOOTER starts-->
-                <a href="contact.html" target="_self">Contact Us</a><br>
-               <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
-               <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
-              <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-                <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
-            </footer><!--FOOTER ends-->
-        
+           
+                <a href="contact.html" target="_self" id="contact">Contact Us</a>
+                 
+                  <div class="social_icons">
+                 <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
+                 <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
+              </div><br><br>
+                <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+              </footer><!--FOOTER ends-->
+              
         </div><!--MAIN DIV ends here-->
     </body>
 </html>

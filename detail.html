@@ -2,19 +2,22 @@
 <html>
     <head>
         <title>Detail</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/detail.css">
+
     </head>
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-             <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="logo"></a>
-                <a href="login.html" target="_self">Login</a>
+                <a href="index.html"><img src="assests/images/logo.png" id="logo" alt="logo"/></a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
-                    
+                 
+                <div class="hotelDetails" ><br><br><br>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="detail_hotel_image"><br>
                     <form action="payment.html" method="GET">
                         <label for="adult_no">Adults:</label>
@@ -45,16 +48,22 @@
                     <h5>DESCRIPTION</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique saepe accusantium vero sed corrupti facilis quasi voluptas error, sit debitis quibusdam perferendis fugit asperiores inventore consequatur alias nobis explicabo esse.</p>
                 </div>
+
+            </div> <br><br><br>
                 </section> <!--SECTION content ends-->
        
-        <footer><!--FOOTER starts-->
-            <a href="contact.html" target="_self">Contact Us</a><br>
-           <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
-           <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-            <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
-        </footer><!--FOOTER ends-->
-    
+                <footer><!--FOOTER starts-->
+           
+                    <a href="contact.html" target="_self" id="contact">Contact Us</a>
+                     
+                      <div class="social_icons">
+                     <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
+                     <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
+                  </div><br><br>
+                    <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+                  </footer><!--FOOTER ends-->
+              
     </div><!--MAIN DIV ends here-->
 </body>
 </html>

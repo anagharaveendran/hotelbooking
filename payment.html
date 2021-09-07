@@ -4,18 +4,21 @@
         <title>Payment</title>
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/payment.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-               <a href="index.html"><img src="assests/images/logo.png" alt="logo" id="logo"></a>
-                <a href="login.html" target="_self">Login</a>
+                <a href="index.html"><img src="assests/images/logo.png" id="logo" alt="logo"/></a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
-              
+                <br><br><br>
                 <div id="hotel_img_details">
+
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="payment_hotel_image">
               
                     <h2>Radisson Blu Hotel</h2>
@@ -36,17 +39,21 @@
                     <p><strong>Total Amount:</strong>10000</p>
                 </div>
                 
-                <a href="#">Pay Now</a>
+                <a href="#" id="payNow">Pay Now</a><br><br><br><br><br><br>
         </section> <!--SECTION content ends-->
        
         <footer><!--FOOTER starts-->
-            <a href="contact.html" target="_self">Contact Us</a><br>
-           <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
-           <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
-          <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-            <p>&copy; 2020 ROOM SEARCH PVT.LTD</p>
-        </footer><!--FOOTER ends-->
-    
+           
+            <a href="contact.html" target="_self" id="contact">Contact Us</a>
+             
+              <div class="social_icons">
+             <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
+             <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
+          </div><br><br>
+            <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+          </footer><!--FOOTER ends-->
+      
     </div><!--MAIN DIV ends here-->
 </body>
 </html>

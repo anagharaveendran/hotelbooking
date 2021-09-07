@@ -26,3 +26,9 @@
     border-radius: 5px;
     padding: 1% 2% 1% 2%;
 }
+
+section #payNow{
+    text-decoration: none;
+    color: #111;
+
+}

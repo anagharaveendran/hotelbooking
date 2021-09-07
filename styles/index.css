@@ -13,7 +13,28 @@
     margin-right: 15%;
     padding: 4%;
 }
+section #searchCity{
+ margin-top: 200px;
+ margin-left: 500px;
+ border: 1px solid transparent;
+ border-radius: 12px;
+ padding: 10px;
+ width: 300px;
+ font-size: 16px;
+ background-color: #f1f1f1;
 
+}
+section{
+    height: 750px;
+}
+section #view_more{
+    text-decoration: none;
+    color: #111;
+
+}
+section #view{
+        text-align: center;
+}
 /* search bar */
 #search_bar{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
