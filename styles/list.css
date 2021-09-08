@@ -15,15 +15,26 @@
     margin-top: 50px;
 
 }
+.hotel_view_details{
+    margin-left: 2%;
+}
 #list-view a{
     text-decoration: none;
     color: #000;
 }
 
+#list-view{
+    margin-left: 2%;
+}
+
 /* image with details */
 .hotel_view{
     margin: 2%;
-    background-color: rgb(132,136,139);
+    /* background-color: rgb(132,136,139); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: lightgrey;
     width: 40%;
 }
 

@@ -10,8 +10,8 @@
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-                <img src="assests/images/logo.png" id="logo" alt="logo"/>
-                <a href="login.html" target="_self" id="login">Login</a>
+                <div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div>
+              <div id="loginLink"><a href="login.html" target="_self" id="login">Login</a></div>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
@@ -22,10 +22,27 @@
             </div>
 
             <div class="city_images">
-            <a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city"></a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="city">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="city">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city"><br>
+            
+                <div class="cityImages">
+                    <div id="imgDiv"><a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city"></a></div>
+                    <div class="hiddenDiv">Delhi</div>
+                </div>
+           
+                <div class="cityImages">
+                    <div id="imgDiv"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="city"></div>
+                    <div class="hiddenDiv">Goa</div>
+                </div>
+           
+                <div class="cityImages">
+                    <div id="imgDiv"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="city"></div>
+                    <div class="hiddenDiv">Hyderbad</div>
+                </div>
+            
+                <div class="cityImages">
+                    <div id="imgDiv"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="city"></div>
+                    <div class="hiddenDiv">Kolkata</div>
+                </div>
+            
             </div>
             
             <div id="view">
@@ -36,14 +53,15 @@
        
         <footer><!--FOOTER starts-->
            
-          <a href="contact.html" target="_self" id="contact">Contact Us</a>
+          <div class="contactDiv"><a href="contact.html" target="_self" id="contact">Contact Us</a></div>
            
             <div class="social_icons">
            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
           <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-        </div><br><br>
-         <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+        </div>
+
+        <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
         </footer><!--FOOTER ends-->
     
     </div><!--MAIN DIV ends here-->

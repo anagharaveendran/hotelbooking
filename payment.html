@@ -11,21 +11,21 @@
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-                <a href="index.html"><img src="assests/images/logo.png" id="logo" alt="logo"/></a>
-                <a href="login.html" target="_self" id="login">Login</a>
+                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
+                <div id="loginLink"><a href="login.html" target="_self" id="login">Login</a></div>
             </header> <!--HEADER ends-->
            
-            <section> <!--SECTION content starts-->
-                <br><br><br>
+            <section class="paymentDetails"> <!--SECTION content starts-->
                 <div id="hotel_img_details">
 
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="payment_hotel_image">
-              
+              <div id="hotelDetails">
                     <h2>Radisson Blu Hotel</h2>
                     <p>#38 of 1,289 hotels in New Delhi</p>
                     <p>National Highway 8,New Delhi 110017 India</p>
                 </div>
-
+                </div>
+                <div id="all_details">
                 <div id="customer_details">
                     <p><strong>Name:</strong>Jhon Doe</p>
                     <p><strong>Number of Adults:</strong>2</p>
@@ -39,20 +39,23 @@
                     <p><strong>Total Amount:</strong>10000</p>
                 </div>
                 
-                <a href="#" id="payNow">Pay Now</a><br><br><br><br><br><br>
+                <a href="#" id="payNow">Pay Now</a>
+            </div>
         </section> <!--SECTION content ends-->
        
         <footer><!--FOOTER starts-->
            
-            <a href="contact.html" target="_self" id="contact">Contact Us</a>
+            <div class="contactDiv"><a href="contact.html" target="_self" id="contact">Contact Us</a></div>
              
               <div class="social_icons">
              <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
              <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
             <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-          </div><br><br>
-            <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+          </div>
+  
+          <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
           </footer><!--FOOTER ends-->
+>
       
     </div><!--MAIN DIV ends here-->
 </body>

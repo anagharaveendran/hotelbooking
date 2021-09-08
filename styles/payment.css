@@ -1,7 +1,7 @@
 /* hotel image */
 #payment_hotel_image{
-    width: 500px;
-    height: 500px;
+    max-width: 270px;
+    max-height: 300px;
 }
 
 /* image with details */
@@ -20,15 +20,53 @@
 }
 
 /* tariff details */
-#tariff_details{
+/* #tariff_details{
     margin: 2%;
     border:1px solid black;
     border-radius: 5px;
     padding: 1% 2% 1% 2%;
-}
+} */
 
 section #payNow{
     text-decoration: none;
     color: #111;
+
+}
+
+#hotelDetails{
+    max-height: 300px;
+    margin-left: 2%;
+}
+
+.paymentDetails{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* height: 750px; */
+}
+
+#hotel_img_details{
+    display: flex;
+    flex-direction: row;
+}
+
+#all_details{
+    border: 1px solid black;
+    background-color: rosybrown;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#all_details strong{
+
+    font-family: cursive;
 
 }

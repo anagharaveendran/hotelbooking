@@ -11,33 +11,54 @@
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
             <header> <!--HEADER starts-->
-                <a href="index.html"><img src="assests/images/logo.png" id="logo" alt="logo"/></a>
-                <a href="login.html" target="_self" id="login">Login</a>
+                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
+                <div id="loginLink"><a href="login.html" target="_self" id="login">Login</a></div>
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
                  
-                <div class="hotelDetails" ><br><br><br>
+                <div class="hotelDetails" style="margin-top: 8%;">
+                    <div class="hotelDetails_image">
+
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="detail_hotel_image"><br>
-                    <form action="payment.html" method="GET">
-                        <label for="adult_no">Adults:</label>
-                        <input type="number" name="adult_no" id="adult_no" min="1"><br>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" required><br>
-                        <label for="from_date">From Date:</label>
-                        <input type="date" name="from_date" id="from_date" required><br>
-                        <label for="to_date">To Date:</label>
-                        <input type="date" name="to_date" id="to_date" required><br>
-                        <label for="total">Total:</label>
-                        <input type="text" name="total" id="total" readonly><br>
-                        <input type="submit" value="Book Now">
-                    </form>
+                    </div>
+
+                    <div class="hotelDetails_form">
+                        <form action="payment.html" method="GET">
+                        <table><tr>
+                        <td><label for="adult_no">Adults:</label></td>
+                        <td><input type="number" name="adult_no" id="adult_no" min="1"></td>
+                        </tr>
+                        <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name" required></td>
+                        </tr>
+                        <tr>
+                        <td><label for="from_date">From Date:</label></td>
+                        <td><input type="date" name="from_date" id="from_date" required></td>
+                        </tr>
+                        <tr>
+                        <td><label for="to_date">To Date:</label></td>
+                        <td><input type="date" name="to_date" id="to_date" required></td>
+                        </tr>
+                        <tr>
+                        <td><label for="total">Total:</label></td>
+                        <td><input type="text" name="total" id="total" readonly></td>
+                        </tr>
+                        <tr>
+                        <td></td>
+                        <td><input type="submit"id="subButton" value="Book Now"></td>
+                        </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
                    
                     <div id="description">
                     <h2>Radisson Blu Hotel</h2>
-                    <p>RATING</p>
+                    <p style="font-family: cursive;">RATING</p>
                     <p>5 Star</p>
-                    <p>AMENITIES</p>
+                    <p style="font-family: cursive;">AMENITIES</p>
                     <ul>
                         <li>Room srevice</li>
                         <li>Restaurant</li>
@@ -45,7 +66,7 @@
                         <li>Fitness center</li>
                         <li>Pool</li>
                     </ul>
-                    <h5>DESCRIPTION</h5>
+                    <h5 style="font-family: cursive;">DESCRIPTION</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique saepe accusantium vero sed corrupti facilis quasi voluptas error, sit debitis quibusdam perferendis fugit asperiores inventore consequatur alias nobis explicabo esse.</p>
                 </div>
 
@@ -54,16 +75,17 @@
        
                 <footer><!--FOOTER starts-->
            
-                    <a href="contact.html" target="_self" id="contact">Contact Us</a>
+                    <div class="contactDiv"><a href="contact.html" target="_self" id="contact">Contact Us</a></div>
                      
                       <div class="social_icons">
                      <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
                      <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-                  </div><br><br>
-                    <p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+                  </div>
+          
+                  <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
                   </footer><!--FOOTER ends-->
-              
+                  
     </div><!--MAIN DIV ends here-->
 </body>
 </html>
