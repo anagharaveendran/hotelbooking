@@ -1,15 +1,11 @@
-/* section{
-    height: 950px;;
-} */
 
 /* hotel image */
 .hotel_image{
-    width: 250px;
+   width: 250px;
     height: 250px;
 }
-.hotel_view{
-
-    float: left;
+.hotel_view h3{
+    font-size: 1.5rem;
 }
 .hotel_view_main{
     margin-top: 50px;
@@ -17,6 +13,9 @@
 }
 .hotel_view_details{
     margin-left: 2%;
+    max-height: 250px;
+    max-width: 250px;
+
 }
 #list-view a{
     text-decoration: none;
@@ -27,28 +26,41 @@
     margin-left: 2%;
 }
 
+.hotel_view_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 /* image with details */
 .hotel_view{
+    max-height: 250px;
+    width: 40%;
+    float: left;
     margin: 2%;
     /* background-color: rgb(132,136,139); */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    /* justify-content: space-around; */
     background-color: lightgrey;
-    width: 40%;
+}
+.hotel_view:hover .hotel_view_details{
+    background-color: rosybrown;
 }
 
-#map-view{
+/* #map-view{
     display: none;
 }
-section nav{
-    margin-top: 100px;
-    text-align: center;
 
-}
-section nav ul li{
+#visit:visited #list-view{
+    display: none;
+} */
+/* section nav ul li{
     display: inline;
     padding: 10px;
+    margin-top: 100px;
 
 }
 
@@ -58,5 +70,12 @@ section nav ul li a{
     text-align: center;
     font-weight: bold;
 
+} */
+
+section #navTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 

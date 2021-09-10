@@ -37,8 +37,8 @@
     padding: 5%;
 }
 
-table td{
-    padding: 5%;
+.hotelDetails_form table td{
+    padding: 4%;
     width: 200px;
 
 }

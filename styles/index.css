@@ -34,6 +34,10 @@
     display: block;
 }
 
+.cityImages:hover .city{
+    opacity: 0.5;
+}
+
 
 /* .city{
     width: 150px;

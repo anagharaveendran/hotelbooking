@@ -34,7 +34,7 @@ header{
 }
 
 header #loginLink{
-    margin: 2%;
+    margin: 1%;
 }
 
 header #login{
@@ -43,6 +43,7 @@ header #login{
     text-decoration: none;
     color: #111;
 }
+
 
 /* social icon style */
 .social_icon{
@@ -83,5 +84,18 @@ footer .social_icons{
     /* float: right; */
     order: 3;
     margin: 2%;
+}
+
+#loginModal{
+    text-align: center;
+}
+
+#loginModal form{
+    margin: 3%;
+}
+
+
+#loginModal table td{
+    padding: 5%;
 }
 
