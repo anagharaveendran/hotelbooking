@@ -6,12 +6,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/common.css">
         <link rel="stylesheet" href="styles/detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
 
     </head>
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
-            <header> <!--HEADER starts-->
+            <header > <!--HEADER starts-->
                 <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
                 <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div>
             </header> <!--HEADER ends-->
@@ -20,12 +22,37 @@
                  
                 <div class="hotelDetails" style="margin-top: 8%;">
                     <div class="hotelDetails_image">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg">
+                          </div>
+                        </div>
 
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="detail_hotel_image"><br>
+                      </div>
+                      <div class="npButtons" style="display: flex;flex-direction: row;align-items:center;justify-content: space-around;">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="55px" width="55px" viewBox="0 0 24 24" fill="rosybrown"><path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/></svg>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="margin-right: 400px;">
+                          <svg xmlns="http://www.w3.org/2000/svg"  height="55px" viewBox="0 0 24 24" width="55px" fill="rosybrown"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                
                     </div>
 
                     <div class="hotelDetails_form">
-                        <form action="payment.html" method="GET">
+                        <form action="payment.html" method="GET" autocomplete="off">
                         <table><tr>
                         <td><label for="adult_no">Adults:</label></td>
                         <td><input type="number" name="adult_no" id="adult_no" min="1"></td>
@@ -58,7 +85,12 @@
                     <div id="description">
                     <h2>Radisson Blu Hotel</h2>
                     <p style="font-family: cursive;">RATING</p>
-                    <p>5 Star</p>
+                    <p><span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                      <span class="fa fa-star" style="color: orange;"></span>
+                    </p>
                     <p style="font-family: cursive;">AMENITIES</p>
                     <ul>
                         <li>Room srevice</li>
@@ -143,6 +175,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-                  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
 </body>
 </html>
