@@ -116,3 +116,43 @@ section #view{
     background-size: cover;
     background-position: center;
 }
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px) 
+{  
+
+    .city_images{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 576px) 
+{
+
+    .city_images{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10%;
+    }
+    .cityImages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 3%;
+    }
+    .cityImages img{
+        width: 300px;
+        height: 300px;
+
+    }
+
+
+}
+

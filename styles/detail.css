@@ -59,3 +59,28 @@
 #description{
     margin: 1% 4% 2% 4%;
 }
+
+
+
+@media (min-width: 576px) and (max-width: 768px) 
+{  
+
+    .hotelDetails{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+@media (min-width: 576px) 
+{
+    .hotelDetails{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

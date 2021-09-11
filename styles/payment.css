@@ -70,3 +70,22 @@ section #payNow{
     font-family: cursive;
 
 }
+
+
+
+@media (min-width: 576px) and (max-width: 768px) 
+{  
+
+    .paymentDetails{
+        display: flex;
+    }
+    
+}
+@media (min-width: 576px) 
+{
+    .paymentDetails{
+        display: flex;
+    }
+
+
+}
