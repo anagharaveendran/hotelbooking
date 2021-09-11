@@ -19,13 +19,6 @@
     margin: 2%;
 }
 
-/* tariff details */
-/* #tariff_details{
-    margin: 2%;
-    border:1px solid black;
-    border-radius: 5px;
-    padding: 1% 2% 1% 2%;
-} */
 
 section #payNow{
     text-decoration: none;
@@ -44,7 +37,6 @@ section #payNow{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* height: 750px; */
 }
 
 #hotel_img_details{
@@ -73,6 +65,8 @@ section #payNow{
 
 
 
+
+/* media query */
 @media (min-width: 576px) and (max-width: 768px) 
 {  
 

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Payment</title>
+        <!--External CSS-->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/common.css">
@@ -11,23 +12,26 @@
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
+          <div class="loader"></div><!--Loader Div-->
+
+
             <header> <!--HEADER starts-->
-                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
-                <div id="loginLink"><button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div>
+                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a><!--Logo-->
+                <div id="loginLink"><button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div><!--Login Button-->
             </header> <!--HEADER ends-->
            
             <section class="paymentDetails"> <!--SECTION content starts-->
-                <div id="hotel_img_details">
+                <div id="hotel_img_details"> 
 
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" id="payment_hotel_image">
-              <div id="hotelDetails">
+              <div id="hotelDetails"><!--hotel details-->
                     <h2>Radisson Blu Hotel</h2>
                     <p>#38 of 1,289 hotels in New Delhi</p>
                     <p>National Highway 8,New Delhi 110017 India</p>
                 </div>
                 </div>
                 <div id="all_details">
-                <div id="customer_details">
+                <div id="customer_details"><!--customer details-->
                     <p><strong>Name:</strong>Jhon Doe</p>
                     <p><strong>Number of Adults:</strong>2</p>
                     <p><strong>Check-in Date:</strong>06/06/2020</p>
@@ -35,26 +39,26 @@
                 </div>
 
 
-                <div id="tariff_details">
+                <div id="tariff_details"><!--payment details-->
                     <p><strong>Tariff Breakdown:</strong>Rs.1000 x 2 Adults x 5 Nights </p>
                     <p><strong>Total Amount:</strong>10000</p>
                 </div>
                 
-                <button type="button" class="btn btn-success"  disabled><a href="#" id="payNow" style="color: #fff;">Pay Now</a></button>
+                <button type="button" class="btn btn-success"  disabled><a href="#" id="payNow" style="color: #fff;">Pay Now</a></button><!--Pay Now Button-->
             </div>
         </section> <!--SECTION content ends-->
        
         <footer><!--FOOTER starts-->
            
-            <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div>
+            <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div><!--Contact Button-->
              
-              <div class="social_icons">
+              <div class="social_icons"><!--Social Icons-->
              <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
              <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
             <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
           </div>
   
-          <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
+          <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div><!--Copyright-->
           </footer><!--FOOTER ends-->
 
                             <!-- Login Modal -->
@@ -108,7 +112,7 @@
                               </div>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-            
+                <!--External JS-->
       
     </div><!--MAIN DIV ends here-->
 </body>

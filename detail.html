@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Detail</title>
+        <!--External CSS-->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/common.css">
@@ -13,15 +14,18 @@
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
+          <div class="loader"></div><!--Loader Div-->
+
+
             <header > <!--HEADER starts-->
-                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
-                <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div>
+                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a><!--Logo-->
+                <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div><!--Login Button-->
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
                  
                 <div class="hotelDetails" style="margin-top: 8%;">
-                    <div class="hotelDetails_image">
+                    <div class="hotelDetails_image"><!--carousel-->
                       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -51,7 +55,7 @@
                 
                     </div>
 
-                    <div class="hotelDetails_form">
+                    <div class="hotelDetails_form"><!--Booking Form-->
                         <form action="payment.html" method="GET" autocomplete="off">
                         <table><tr>
                         <td><label for="adult_no">Adults:</label></td>
@@ -82,14 +86,14 @@
                     </div>
                 </div>
                    
-                    <div id="description">
+                    <div id="description"><!--Hotel Description-->
                     <h2>Radisson Blu Hotel</h2>
                     <p style="font-family: cursive;">RATING</p>
-                    <p><span class="fa fa-star" style="color: orange;"></span>
-                      <span class="fa fa-star" style="color: orange;"></span>
-                      <span class="fa fa-star" style="color: orange;"></span>
-                      <span class="fa fa-star" style="color: orange;"></span>
-                      <span class="fa fa-star" style="color: orange;"></span>
+                    <p><span class="fa fa-star star"></span>
+                      <span class="fa fa-star star" ></span>
+                      <span class="fa fa-star star" ></span>
+                      <span class="fa fa-star star" ></span>
+                      <span class="fa fa-star star"></span>
                     </p>
                     <p style="font-family: cursive;">AMENITIES</p>
                     <ul>
@@ -108,15 +112,15 @@
        
                 <footer><!--FOOTER starts-->
            
-                    <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div>
+                    <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div><!--Contact Button-->
                      
-                      <div class="social_icons">
+                      <div class="social_icons"><!--Social Icons-->
                      <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
                      <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
                   </div>
           
-                  <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
+                  <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div><!--Copyright-->
                   </footer><!--FOOTER ends-->
                   
     </div><!--MAIN DIV ends here-->
@@ -176,6 +180,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+        <!--External JS-->
 </body>
 </html>

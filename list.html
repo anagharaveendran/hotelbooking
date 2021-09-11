@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>List</title>
+  <!--External CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/common.css">
@@ -17,9 +18,12 @@
 <body>
   <div id="mainDiv">  <!--MAIN DIV starts here-->
 
+    <div class="loader"></div><!--Loader Div-->
+
+
     <header> <!--HEADER starts-->
-        <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a>
-        <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div>
+        <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a><!--Logo-->
+        <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div><!--Login Button-->
     </header> <!--HEADER ends-->
    
     <section> <!--SECTION content starts-->
@@ -27,7 +31,7 @@
 <div class="panel panel-default">
 <div id="Tabs" role="tabpanel" style="margin-top: 100px;">
 
-  <div id="navTab">
+  <div id="navTab"> <!--Nav Tab-->
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a href="#list-view" class="nav-link active" aria-controls="personal" role="tab" data-toggle="tab" style="color: #111;">List View
@@ -42,52 +46,51 @@
 <div class="hotel_view_main tab-pane active" role="tabpanel" id="list-view" style="height: 750px;"><!--hotel list view-->
                 
   <a href="detail.html"><div id="hotel1" class="hotel_view">
-<img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" class="hotel_image">
+<img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="hotel_image" class="hotel_image"><!--Image-->
 <div class="hotel_view_details" style="margin-left: 0%;width: 50%; padding-left: 2%;">
-<h3>Radisson Blu Hotel</h3>
+<h3>Radisson Blu Hotel</h3><!--Name-->
 <p><span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   </p>
-<p>New Delhi</p>
+<p>New Delhi</p><!--Address-->
 </div>
 </div></a>
 
 <div id="hotel2" class="hotel_view">
-<img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="hotel_image" class="hotel_image">
+<img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="hotel_image" class="hotel_image"><!--Image-->
 <div class="hotel_view_details" style="margin-left: 0%;width: 50%;padding-left: 2%;">
-<h3>The Lalit New Delhi</h3>
+<h3>The Lalit New Delhi</h3><!--Name-->
 <p><span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star-half-o star"></span>
   <span class="fa fa-star"></span>
   </p>
-<p>New Delhi</p>
+<p>New Delhi</p><!--Address-->
 </div>
 </div>
 
 <div id="hotel3" class="hotel_view" >
-<img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="hotel_image" class="hotel_image">
+<img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="hotel_image" class="hotel_image"><!--Image-->
 <div class="hotel_view_details" style="margin-left: 0%;width: 50%; padding-left: 2%;">
-<h3>Taj Palace</h3>
+<h3>Taj Palace</h3><!--Name-->
 <p><span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star star"></span>
   <span class="fa fa-star"></span>
   </p>
-<p>New Delhi</p>
+<p>New Delhi</p><!--Address-->
 </div>
 </div>
 </div>
 
 
-<div id="map-view" role="tabpanel" class="tab-pane">
-<img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map_image">
-<!-- <p>MAP VIEW</p> -->
+<div id="map-view" role="tabpanel" class="tab-pane"><!--Map view-->
+<img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map_image"><!--Image-->
 </div>
 
 </div>
@@ -108,14 +111,14 @@ $(function () {
 </section> <!--SECTION content ends-->
 <footer><!--FOOTER starts-->
 
-    <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div>                 
-      <div class="social_icons">
+    <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div>     <!--Contact-->            
+      <div class="social_icons"><!--Social Icons-->
      <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
      <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
     <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
   </div>
 
-  <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
+  <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div><!--Copyright-->
   </footer><!--FOOTER ends-->
         
 </div><!--MAIN DIV ends here-->
@@ -175,6 +178,6 @@ $(function () {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+<!--External JS-->
 </body>
 </html>

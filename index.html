@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Index</title>
+        <!-- external CSS -->
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/common.css">
@@ -10,19 +11,25 @@
     <body>
         <div id="mainDiv">  <!--MAIN DIV starts here-->
 
+          <div class="loader"></div><!--Loader Div-->
+
             <header> <!--HEADER starts-->
-                <div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div>
-              <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div>
+                <div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div><!--Logo-->
+              <div id="loginLink"><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div><!--Login Button-->
             </header> <!--HEADER ends-->
            
             <section> <!--SECTION content starts-->
-            <div id="search_bar">
+           
+           
+              <div id="search_bar"><!--Search Bar-->
+               
                 <form autocomplete="off">
                     <input type="text" placeholder="City" name="searchCity" id="searchCity">
                 </form>
+
             </div>
 
-            <div class="city_images">
+            <div class="city_images"><!--City Cards-->
             
                 <div class="cityImages">
                     <div id="imgDiv"><a href="list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="city"></a></div>
@@ -46,22 +53,23 @@
             
             </div>
             
-            <div id="view">
+            <div id="view"><!--View More Button-->
               <a href="index.html" id="view_more"><button type="button" class="btn btn-secondary" style="color:#fff;">View More</button></a>
             </div>
-            </section> <!--SECTION content ends-->
+           
+          </section> <!--SECTION content ends-->
        
         <footer><!--FOOTER starts-->
            
-          <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div>
+          <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div><!--Contact Button-->
            
-            <div class="social_icons">
+            <div class="social_icons"><!--Social Icons-->
            <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
            <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
           <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
         </div>
 
-        <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div>
+        <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div><!--Copyright-->
         </footer><!--FOOTER ends-->
     
     </div><!--MAIN DIV ends here-->
@@ -118,6 +126,6 @@
                   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    <!--External JS-->
 </body>
 </html>
