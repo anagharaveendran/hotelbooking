@@ -15,10 +15,7 @@
           <div class="loader"></div><!--Loader Div-->
 
 
-            <header> <!--HEADER starts-->
-                <a href="index.html"><div id="logoImg"><img src="assests/images/logo.png" id="logo" alt="logo"/></div></a><!--Logo-->
-                <div id="loginLink"><button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button></div><!--Login Button-->
-            </header> <!--HEADER ends-->
+          <header id="topHeader"><!--Header--></header> 
            
             <section class="paymentDetails"> <!--SECTION content starts-->
                 <div id="hotel_img_details"> 
@@ -44,55 +41,17 @@
                     <p><strong>Total Amount:</strong>10000</p>
                 </div>
                 
-                <button type="button" class="btn btn-success"  disabled><a href="#" id="payNow" style="color: #fff;">Pay Now</a></button><!--Pay Now Button-->
+                <button type="button" class="btn btn-success" id="payNowButton" style="color: #fff;" onclick="message()">Pay Now</button><!--Pay Now Button-->
             </div>
         </section> <!--SECTION content ends-->
        
-        <footer><!--FOOTER starts-->
-           
-            <div class="contactDiv"><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button></div><!--Contact Button-->
-             
-              <div class="social_icons"><!--Social Icons-->
-             <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" class="social_icon"></a>
-             <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" class="social_icon"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="assests/images/twitter.png" class="social_icon"></a>
-          </div>
-  
-          <div class="copyDiv"><p id="copy">&copy; 2020 ROOM SEARCH PVT.LTD</p></div><!--Copyright-->
-          </footer><!--FOOTER ends-->
+        <footer id="bootomFooter"><!--footer--></footer>
 
-                            <!-- Login Modal -->
-                            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="index.html" method="GET">
-                                          <div class="form-group row">
-                                            <label for="username" class="col-sm-4 col-form-label">Username:</label>
-                                            <div class="col-sm-8">
-                                              <input type="text" class="form-control" id="username" placeholder="Enter Username">
-                                            </div>
-                                          </div>
-                                          <div class="form-group row">
-                                            <label for="password" class="col-sm-4 col-form-label">Password:</label>
-                                            <div class="col-sm-8">
-                                              <input type="password" class="form-control" id="password" placeholder="Enter Password">
-                                            </div>
-                                          </div>
-                                              </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-primary" style="margin:0 auto;">Login</button>
-                                    </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-              
-            
+                      <!-- Login Modal -->
+                      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      </div>
+        
+
                               <!-- Contact Modal -->
                               <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -116,6 +75,9 @@
                                   </div>
                                 </div>
                               </div>
+
+                <script src="scripts/common.js"></script>
+                <script src="scripts/payment.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
                 <!--External JS-->
