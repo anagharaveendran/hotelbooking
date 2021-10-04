@@ -1,3 +1,5 @@
+
+//Header Template .....................................................................
 let headerTemplate = `<a href="index.html">
                     <div id="logoImg">
                         <img src="assests/images/logo.png" id="logo" alt="logo"/>
@@ -11,6 +13,9 @@ let headerTemplate = `<a href="index.html">
                     </div>`;
 document.getElementById("topHeader").innerHTML = headerTemplate;
 
+
+
+//Footer Template .............................................................................
 let footerTemplate = `<div class="contactDiv">
                         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: #fff;">Contact Us</button>
                         </div>
@@ -70,6 +75,8 @@ document.getElementById("bootomFooter").innerHTML = footerTemplate;
     } 
     
 
+
+    //Login Function ....................................................
     function userLogin() {
         debugger;
         let username = document.getElementById("username").value;
@@ -84,13 +91,27 @@ document.getElementById("bootomFooter").innerHTML = footerTemplate;
             document.getElementById("payNowButton").disabled = false;
         } 
     }
-    
+
+
+    //Logout Function ...................................................
 function userLogout(){
     sessionStorage = " ";
     sessionStorage.isLogin = false;
     buttonLogin.style.display = "flex";
     buttonLogout.style.display = "none";
     document.getElementById("payNowButton").disabled = true;
+}  
 
+//Loader Function..........................................................
+$(window).load(function() {
+            
+                if (response.status != 200) 
+                return;
 
-}
+        response.json().then(function(data) {
+          let api = data;
+          let isItLoaded = document.getElementById('loader');
+          isItLoaded.value = api[0].book_title;
+        })
+    
+    });
