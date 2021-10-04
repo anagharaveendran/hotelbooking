@@ -51,6 +51,12 @@ function HotelListFunc(){
 }
 
 //Hotel map function .............................................................
-function HotelMaplist(){
-       
+function initMap() {
+   var map;
+   map = new google.maps.Map(document.getElementById("map-view"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8
+   });
+
+
 }
